@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Library</title>
+</head>
+<body>
+    <h1>Library</h1>
+    <button class="new-book-btn" aria-label="Add New Book">+</button>
+    <div class="container"></div>
+    <dialog>
+        <form method="dialog">
+            <div>
+                <h3>Add book to Library</h3>
+                <button type="button" id="close-btn" aria-label="Close dialog">X</button>
+            </div>
+            <div>
+                <label for="title-input">Title</label>
+                <input required autofocus id="title-input" type="text" name="title">
+            </div>
+            <div>
+                <label for="author-input">Author</label>
+                <input required id="author-input" type="text" name="author">
+            </div>
+            <div>
+                <label for="pages-input">How many pages?</label>
+                <input required id="pages-input" type="number" name="pages">
+            </div>
+            <div id="check-div">
+                <label for="read-input">read</label>
+                <input id="read-input" type="checkbox" name="read">
+            </div>
+            <button id="add-btn" value="default" type="submit">ADD</button>
+        </form>
+    </dialog>
+    <script src="script.js"></script>
+</body>
+</html>
