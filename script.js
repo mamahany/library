@@ -11,11 +11,13 @@ const pagesInput = document.querySelector("#pages-input");
 const readInput = document.querySelector("#read-input");
 const form = document.querySelector("form");
 
-function Book(title, author, pages, read){
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
+class Book{
+    constructor(title, author, pages, read){
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
 }
 
 function handleDialog(){
